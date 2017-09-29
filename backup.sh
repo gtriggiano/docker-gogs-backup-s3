@@ -56,7 +56,7 @@ move_to_s3 () {
 export AWS_DEFAULT_REGION=$S3_REGION
 
 BACKUP_START_TIME=$(date +"%Y-%m-%dT%H%M%SZ")
-S3_FILE="${BACKUP_START_TIME}.gitea-dump.zip"
+S3_FILE="${BACKUP_START_TIME}.gogs-backup.zip"
 
 cd /backup
 echo "Executing backup of Gogs..."
